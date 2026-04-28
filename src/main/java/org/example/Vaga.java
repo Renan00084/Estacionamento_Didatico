@@ -5,14 +5,31 @@ public class Vaga {
     private boolean ocupada = false;
     private Veiculo veiculoEstacionado;
 
+    public boolean getOcupada (){
+        return ocupada;
+
+    }
+
+    public int getNumero(){
+        return numero;
+
+    }
+
+    public Vaga (int numero){
+        this.numero = numero;
+        this.ocupada = false;
+        this.veiculoEstacionado = null;
+
+    }
+
     public void estacionar(Veiculo carro){
-        ocupada = true;
+        this.ocupada = true;
         this.veiculoEstacionado = carro;
 
     }
 
     public void liberar(){
-        ocupada = false;
+        this.ocupada = false;
         this.veiculoEstacionado = null;
 
     }

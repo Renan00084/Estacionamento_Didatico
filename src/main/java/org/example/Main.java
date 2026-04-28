@@ -7,6 +7,8 @@ public class Main {
     int opcao = 0;
     String entradaOpcao;
 
+    Estacionamento estacionamento = new Estacionamento(10);
+
     do{
         System.out.println("\n--- MENU ESTACIONAMENTO ---");
         System.out.println("1. Registrar Entrada");
@@ -31,17 +33,24 @@ public class Main {
             case 1:
 
             break;
+
             case 2:
 
             break;
+
             case 3:
+                estacionamento.exibirVagasLivres();
 
             break;
+
             case 4:
                 System.out.println("Saindo...");
+
             break;
+
             default:
                 System.out.println("Comando nao identificado, tente novamente");
+
             break;
 
         }
