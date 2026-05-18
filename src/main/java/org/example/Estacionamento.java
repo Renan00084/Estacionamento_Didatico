@@ -17,8 +17,13 @@ public class Estacionamento {
 
     }
 
-    public void registrarEntrada(Veiculo carro){
+    public void registrarEntrada(Veiculo carro, int vaga){
+        for(Vaga vaga : vagas){
+            if(vaga.getNumero() = vaga){
 
+            }
+
+        }
 
     }
 

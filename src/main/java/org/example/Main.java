@@ -31,6 +31,31 @@ public class Main {
 
         switch(opcao){
             case 1:
+                int vaga, cont = 1;
+                String placa, modelo;
+
+                System.out.println("Digite o numero da placa:");
+                modelo = scanner.nextLine();
+
+                System.out.println("Digite a placa do carro:");
+                placa = scanner.nextLine();
+
+                switch(cont){
+                    case 1:
+                        Veiculo c1 = new Veiculo (placa, modelo);
+                        System.out.println("Digite o a vaga na qual voce deseja estacionar:");
+                        vaga = scanner.nextInt();
+
+                        estacionamento.registrarEntrada(c1, vaga);
+
+
+                }
+
+                System.out.println("Digite o a vaga na qual voce deseja estacionar:");
+                vaga = scanner.nextInt();
+
+
+
 
             break;
 
